@@ -40,7 +40,7 @@ export default function DashboardPage() {
 
           <div className="flex items-center gap-5">
             <Link
-              href="/start"
+              href="/quiz"
               className="text-sm text-gray-400 transition hover:text-white"
             >
               Retake Assessment

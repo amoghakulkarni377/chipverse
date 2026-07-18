@@ -159,12 +159,15 @@ export default function StartPage() {
             </div>
           </div>
 
-          <button
-            onClick={() => setStarted(true)}
-            className="mt-10 rounded-xl bg-cyan-500 px-8 py-4 font-semibold text-black transition hover:bg-cyan-400"
-          >
-            Begin Assessment →
-          </button>
+     <div className="mt-10 flex justify-center">     
+     <Link
+  href="/login"
+  className="bg-cyan-400 hover:bg-cyan-300 text-black font-semibold px-6 py-3 rounded-xl transition"
+>
+     
+     Begin Assessment →
+</Link>
+</div>        
 
           <p className="mt-4 text-sm text-gray-500">
             No account required.
