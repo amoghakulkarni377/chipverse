@@ -169,9 +169,7 @@ export default function StartPage() {
 </Link>
 </div>        
 
-          <p className="mt-4 text-sm text-gray-500">
-            No account required.
-          </p>
+          
         </section>
       )}
 
