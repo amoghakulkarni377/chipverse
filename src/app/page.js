@@ -132,6 +132,7 @@ export default function StartPage() {
    <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2">
   <span className="text-cyan-400">✦</span>
 
+
   <p className="text-xs font-medium tracking-[0.14em] text-gray-400 sm:text-sm">
     The Playground for{" "}
     <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text font-semibold text-transparent">
@@ -139,6 +140,13 @@ export default function StartPage() {
     </span>
   </p>
 </div>
+<h1 className="max-w-4xl text-center text-4xl font-bold leading-tight sm:text-6xl lg:text-7xl">
+  Design the{" "}
+  <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text text-transparent">
+    Next Era
+  </span>{""}
+  of Computing.
+</h1>
 
     <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-400 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
       Assess your fundamentals and receive a personalised roadmap
