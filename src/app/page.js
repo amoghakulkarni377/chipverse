@@ -143,9 +143,9 @@ export default function StartPage() {
 <h1 className="max-w-4xl text-center text-4xl font-bold leading-tight sm:text-6xl lg:text-7xl">
   Design the{" "}
   <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text text-transparent">
-    Next Era
-  </span>{""}
-  of Computing.
+    Next Era{" "}
+  </span>
+    of Computing.
 </h1>
 
     <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-400 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
