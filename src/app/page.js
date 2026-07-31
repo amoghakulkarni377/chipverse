@@ -126,52 +126,50 @@ export default function StartPage() {
       </nav>
 
       {!started && !completed && (
-        <section className="mx-auto flex min-h-[80vh] max-w-4xl flex-col items-center justify-center text-center">
-          <span className="mb-5 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300">
-            ChipVerse Skill Assessment
-          </span>
+  <section className="mx-auto flex min-h-[80vh] w-full max-w-4xl flex-col items-center justify-center px-2 py-10 text-center sm:px-4">
+    <span className="mb-5 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-2 text-xs text-cyan-300 sm:px-4 sm:text-sm">
+      ChipVerse Skill Assessment
+    </span>
 
-          <h1 className="max-w-3xl text-4xl font-bold leading-tight sm:text-6xl">
-            Discover where your
-            <span className="text-cyan-400"> VLSI journey </span>
-            should begin.
-          </h1>
+    <p className="text-sm tracking-[0.2em] uppercase text-gray-400">
+  ✦ The Playground for{" "}
+  <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text text-transparent font-semibold">
+    Future Silicon Minds
+  </span>
+</p>
 
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-gray-400">
-            Answer five beginner-friendly questions and receive your
-            ChipVerse skill level with a personalized learning roadmap.
-          </p>
+    <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-400 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
+      Assess your fundamentals and receive a personalised roadmap
+      to begin your journey into chip design.
+    </p>
 
-          <div className="mt-10 grid w-full max-w-2xl gap-4 sm:grid-cols-3">
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="text-2xl font-bold text-cyan-400">5</p>
-              <p className="mt-1 text-sm text-gray-400">Questions</p>
-            </div>
+    <div className="mt-8 grid w-full max-w-2xl grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-3">
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+        <p className="text-xl font-bold text-cyan-400 sm:text-2xl">5</p>
+        <p className="mt-1 text-sm text-gray-400">Questions</p>
+      </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="text-2xl font-bold text-cyan-400">3 min</p>
-              <p className="mt-1 text-sm text-gray-400">Completion time</p>
-            </div>
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+        <p className="text-xl font-bold text-cyan-400 sm:text-2xl">3 min</p>
+        <p className="mt-1 text-sm text-gray-400">Completion time</p>
+      </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-              <p className="text-2xl font-bold text-cyan-400">1</p>
-              <p className="mt-1 text-sm text-gray-400">Personal roadmap</p>
-            </div>
-          </div>
+      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
+        <p className="text-xl font-bold text-cyan-400 sm:text-2xl">1</p>
+        <p className="mt-1 text-sm text-gray-400">Personal roadmap</p>
+      </div>
+    </div>
 
-     <div className="mt-10 flex justify-center">     
-     <Link
-  href="/login"
-  className="bg-cyan-400 hover:bg-cyan-300 text-black font-semibold px-6 py-3 rounded-xl transition"
->
-     
-     Begin Assessment →
-</Link>
-</div>        
-
-          
-        </section>
-      )}
+    <div className="mt-8 flex w-full justify-center sm:mt-10">
+      <Link
+        href="/login"
+        className="w-full max-w-sm rounded-xl bg-cyan-400 px-6 py-3 text-center font-semibold text-black transition hover:bg-cyan-300 sm:w-auto"
+      >
+        Begin Assessment →
+      </Link>
+    </div>
+  </section>
+)}
 
       {started && !completed && (
         <section className="mx-auto flex min-h-[80vh] max-w-3xl flex-col justify-center">
