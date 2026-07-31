@@ -161,7 +161,7 @@ export default function StartPage() {
   </button>
 
   <button className="px-8 py-4 rounded-2xl border border-cyan-500/40 bg-slate-900/50 text-white font-semibold text-lg backdrop-blur hover:bg-cyan-500/10 hover:border-cyan-400 hover:scale-105 active:scale-95 transition-all duration-300">
-    See What's Inside →
+      Watch the Vision →
   </button>
 
 </div>
