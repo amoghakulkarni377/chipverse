@@ -65,8 +65,8 @@ export default function DashboardPage() {
             </h1>
 
             <p className="mt-4 max-w-2xl text-gray-400">
-              Continue building your VLSI skills
-              time.
+              Continue building your skills
+            
             </p>
           </div>
 
