@@ -1,66 +1,77 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useState } from "react";
+import Particles from "@tsparticles/react";
+import { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 export default function ChipBackground() {
-  const backgroundRef = useRef(null);
+  const [init, setInit] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      if (!backgroundRef.current) return;
-
-      backgroundRef.current.style.setProperty(
-        "--mouse-x",
-        `${event.clientX}px`
-      );
-
-      backgroundRef.current.style.setProperty(
-        "--mouse-y",
-        `${event.clientY}px`
-      );
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
+    initParticlesEngine(async (engine) => {
+      await loadSlim(engine);
+    }).then(() => {
+      setInit(true);
+    });
   }, []);
 
-  return (
-    <div
-      ref={backgroundRef}
-      className="chip-background"
-      aria-hidden="true"
-    >
-      <div className="chip-grid" />
-
-      <div className="circuit circuit-one">
-        <span />
-        <span />
-        <span />
-      </div>
-
-      <div className="circuit circuit-two">
-        <span />
-        <span />
-        <span />
-      </div>
-
-      <div className="circuit circuit-three">
-        <span />
-        <span />
-        <span />
-      </div>
-
-      <div className="chip-core">
-        <div className="chip-core-inner">
-          <span>CV</span>
-        </div>
-      </div>
-
-      <div className="mouse-glow" />
-      <div className="background-overlay" />
-    </div>
+  const options = useMemo(
+    () => ({
+      fullScreen: {
+        enable: true,
+        zIndex: -1,
+      },
+      background: {
+        color: "#070b14",
+      },
+      fpsLimit: 60,
+      particles: {
+        number: {
+          value: 80,
+        },
+        color: {
+          value: "#22d3ee",
+        },
+        links: {
+          enable: true,
+          color: "#22d3ee",
+          distance: 160,
+          opacity: 0.25,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 1,
+        },
+        opacity: {
+          value: 0.5,
+        },
+        size: {
+          value: { min: 1, max: 3 },
+        },
+      },
+      interactivity: {
+        events: {
+          onHover: {
+            enable: true,
+            mode: "grab",
+          },
+        },
+        modes: {
+          grab: {
+            distance: 180,
+            links: {
+              opacity: 0.8,
+            },
+          },
+        },
+      },
+    }),
+    []
   );
+
+  if (!init) return null;
+
+  return <Particles id="tsparticles" options={options} />;
 }
