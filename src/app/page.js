@@ -127,16 +127,18 @@ export default function StartPage() {
 
       {!started && !completed && (
   <section className="mx-auto flex min-h-[80vh] w-full max-w-4xl flex-col items-center justify-center px-2 py-10 text-center sm:px-4">
-    <span className="mb-5 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-2 text-xs text-cyan-300 sm:px-4 sm:text-sm">
-      ChipVerse Skill Assessment
-    </span>
+   
 
-    <p className="text-sm tracking-[0.2em] uppercase text-gray-400">
-  ✦ The Playground for{" "}
-  <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text text-transparent font-semibold">
-    Future Silicon Minds
-  </span>
-</p>
+   <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2">
+  <span className="text-cyan-400">✦</span>
+
+  <p className="text-xs font-medium tracking-[0.14em] text-gray-400 sm:text-sm">
+    The Playground for{" "}
+    <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text font-semibold text-transparent">
+      Future Silicon Minds
+    </span>
+  </p>
+</div>
 
     <p className="mt-5 max-w-2xl text-sm leading-6 text-gray-400 sm:mt-6 sm:text-base sm:leading-7 lg:text-lg lg:leading-8">
       Assess your fundamentals and receive a personalised roadmap
