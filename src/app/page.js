@@ -111,7 +111,7 @@ export default function StartPage() {
   const percentage = Math.round((score / questions.length) * 100);
 
   return (
-    <main className="min-h-screen bg-[#070b14] px-6 py-8 text-white">
+    <main className="min-h-screen bg-transparent px-6 py-8 text-white">
       <nav className="mx-auto flex max-w-6xl items-center justify-between">
         <Link href="/" className="text-xl font-bold tracking-tight">
           ChipVerse
