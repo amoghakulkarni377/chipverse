@@ -17,7 +17,7 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#070b14] flex items-center justify-center text-white">
+    <main className="relative z-10 min-h-screen flex items-center justify-center text-white">
       <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-8">
         <h1 className="text-3xl font-bold text-center">
           Welcome to ChipVerse

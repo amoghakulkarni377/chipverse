@@ -35,10 +35,10 @@ export default function StartPage() {
         {/* Main Heading */}
         <h1 className="max-w-5xl text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl md:leading-[1.18]">
           Design the Next Era
-          <br />
-          <span className="text-cyan-400">
-            of Computing.
-          </span>
+          <div className="flex items-center justify-center gap-4">
+  <span>of</span>
+  <span className="text-cyan-400">Computing.</span>
+</div>
         </h1>
 
         {/* Description */}
@@ -53,14 +53,14 @@ export default function StartPage() {
             href="/login"
             className="w-full rounded-2xl bg-cyan-400 px-8 py-4 text-center text-base font-bold text-slate-950 shadow-[0_0_35px_rgba(34,211,238,0.4)] transition-all duration-300 hover:scale-105 hover:bg-cyan-300 hover:shadow-[0_0_60px_rgba(34,211,238,0.65)] active:scale-95 sm:w-auto"
           >
-            Begin Assessment →
+            Begin Assessment 
           </Link>
 
           <Link
             href="#vision"
             className="w-full rounded-2xl border border-cyan-400/40 bg-slate-950/40 px-8 py-4 text-center text-base font-bold text-white backdrop-blur-md transition-all duration-300 hover:scale-105 hover:border-cyan-300 hover:bg-cyan-400/10 hover:shadow-[0_0_35px_rgba(34,211,238,0.2)] active:scale-95 sm:w-auto"
           >
-            Watch the Vision →
+            Watch the Vision 
           </Link>
         </div>
       </section>

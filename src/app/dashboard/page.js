@@ -31,8 +31,8 @@ const skills = [
 
 export default function DashboardPage() {
   return (
-    <main className="min-h-screen bg-[#070b14] text-white">
-      <nav className="border-b border-white/10 bg-[#070b14]/90 px-6 py-5">
+    <main className="relative z-10 min-h-screen text-white">
+      <nav className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#070b14]/80 px-6 py-5 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <Link href="/" className="text-xl font-bold tracking-tight">
             ChipVerse
@@ -65,7 +65,7 @@ export default function DashboardPage() {
             </h1>
 
             <p className="mt-4 max-w-2xl text-gray-400">
-              Continue building your VLSI skills one practical challenge at a
+              Continue building your VLSI skills
               time.
             </p>
           </div>
