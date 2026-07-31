@@ -66,7 +66,6 @@ export default function DashboardPage() {
 
             <p className="mt-4 max-w-2xl text-gray-400">
               Continue building your skills
-            
             </p>
           </div>
 
