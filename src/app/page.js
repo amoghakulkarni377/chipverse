@@ -140,7 +140,7 @@ export default function StartPage() {
     </span>
   </p>
 </div>
-<h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] text-slate-100">
+<h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.2] text-slate-100">
   Design the Next Era
   <br />
   of{" "}
@@ -154,22 +154,17 @@ export default function StartPage() {
       to begin your journey into chip design.
     </p>
 
-    <div className="mt-8 grid w-full max-w-2xl grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-3">
-      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-        <p className="text-xl font-bold text-cyan-400 sm:text-2xl">5</p>
-        <p className="mt-1 text-sm text-gray-400">Questions</p>
-      </div>
+    <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
 
-      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-        <p className="text-xl font-bold text-cyan-400 sm:text-2xl">3 min</p>
-        <p className="mt-1 text-sm text-gray-400">Completion time</p>
-      </div>
+  <button className="px-8 py-4 rounded-2xl bg-cyan-500 text-black font-semibold text-lg hover:bg-cyan-400 hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_35px_rgba(34,211,238,0.35)] hover:shadow-[0_0_60px_rgba(34,211,238,0.6)]">
+    Explore ChipVerse
+  </button>
 
-      <div className="rounded-2xl border border-white/10 bg-white/5 p-4 sm:p-5">
-        <p className="text-xl font-bold text-cyan-400 sm:text-2xl">1</p>
-        <p className="mt-1 text-sm text-gray-400">Personal roadmap</p>
-      </div>
-    </div>
+  <button className="px-8 py-4 rounded-2xl border border-cyan-500/40 bg-slate-900/50 text-white font-semibold text-lg backdrop-blur hover:bg-cyan-500/10 hover:border-cyan-400 hover:scale-105 active:scale-95 transition-all duration-300">
+    See What's Inside →
+  </button>
+
+</div>
 
     <div className="mt-8 flex w-full justify-center sm:mt-10">
       <Link
