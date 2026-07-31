@@ -140,10 +140,12 @@ export default function StartPage() {
     </span>
   </p>
 </div>
-<h1 className="max-w-4xl text-center text-4xl font-bold leading-tight sm:text-6xl lg:text-7xl">
-  Design the Next Era{" "}
-  <span className="bg-gradient-to-r from-cyan-400 to-sky-500 bg-clip-text text-transparent">
-    of Computing.
+<h1 className="text-5xl md:text-7xl font-semibold tracking-tight leading-[1.05] text-slate-100">
+  Design the Next Era
+  <br />
+  of{" "}
+  <span className="text-cyan-400">
+    Computing.
   </span>
 </h1>
 
